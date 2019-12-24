@@ -1,0 +1,56 @@
+{
+  "name": "anduschain-explorer-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "resolutions": {
+  "babel-jest": "24.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "clipboardy": "^2.1.0",
+    "copy-text-to-clipboard": "^2.1.0",
+    "datamaps": "^0.5.9",
+    "immer": "^3.1.1",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.0",
+    "react-dom": "^16.8.6",
+    "react-perfect-scrollbar": "^1.5.2",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "react-spinners": "^0.5.4",
+    "react-tabs": "^3.0.0",
+    "recharts": "^1.5.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

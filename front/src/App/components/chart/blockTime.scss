@@ -1,0 +1,23 @@
+.BlockTime {
+  width: 520px;
+  .upper {
+    margin-bottom: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blockTime_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .blockTime_number {
+    font-weight: 700;
+    font-size: 40px;
+    small {
+      margin-left: 9px;
+      font-size: 14px;
+      color: #999999;
+      font-weight: 400;
+    }
+  }
+}

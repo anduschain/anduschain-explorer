@@ -1,0 +1,70 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', 'Noto Sans KR', 맑은고딕, "Malgun Gothic", 돋움, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.6rem;
+  background: url(./assets/images/common/bg_visual.png), linear-gradient(90deg, rgba(70,29,176,1) 40%, rgba(19,71,205,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 100vh;
+}
+
+.page_upper {
+  padding: 60px 0;
+}
+
+.table_type01 {
+  width: 100%;
+  .link {
+    text-decoration: underline;
+  }
+
+  th {
+    background-color: #f1f1f1;
+    height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    word-break: keep-all;
+  }
+
+  td {
+    border-bottom: 1px solid #e2e2e2;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+.table_type02 {
+  width: 100%;
+  font-size: 14px;
+  tr {
+    &:first-child {
+      th, td {
+        border-top: 1px solid #e2e2e2;
+      }
+    }
+  }
+  th {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 0 40px;
+    font-weight: 500;
+    width: 20%;
+    border-bottom: 1px solid #e2e2e2;
+    word-break: keep-all;
+  }
+  td {
+    text-align: left;
+    padding: 0 10px 0 40px;
+    color: #333333;
+    border-bottom: 1px solid #e2e2e2;
+    height: 60px;
+  }
+  .link {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,20 @@
+.Pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  .Pager_arrow {
+    cursor: pointer;
+  }
+  .pager_items {
+    margin: 0 30px;
+    color: #c0c0c0;
+    .divideLine {
+      margin: 0 12px;
+    }
+    .pager_current {
+      color: #000000;
+      font-weight: 500;
+    }
+  }
+}

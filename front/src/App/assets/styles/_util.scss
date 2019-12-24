@@ -1,0 +1,78 @@
+/* Lauout */
+.l-wrapper {
+  box-sizing: border-box;
+  width: 1480px;
+  min-width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.l-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+}
+.l-col {
+  padding: 20px;
+}
+.l-col-1-100 {
+  width: 100%;
+}
+.l-col-2-100 {
+  width: 50%;
+}
+.l-col-3-100 {
+  width: 33.33333333333334%;
+}
+.l-col-4-100 {
+  width: 25%;
+}
+.l-col-5-100 {
+  width: 20%;
+}
+
+/* util */
+.u-clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.u-hidden {
+  overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  clip:   rect(1,1,1,1);
+  width:  1px;
+  height: 1px;
+  border: 0;
+}
+caption.u-hidden {
+  position: static;
+}
+.u-ls-number {
+  letter-spacing: 0;
+}
+.u-ls-korean {
+  letter-spacing: -0.5px;
+}
+.u-emphasize {
+  color: #04a9ff;
+}
+.u-tar {
+  text-align: right;
+}
+.u-tac {
+  text-align: center;
+}
+.u-tal {
+  text-align: left;
+}
+.u-por {
+  position: relative;
+}
+.u-gray {
+  color: #999999;
+}
+.u-w100 {
+  width: 100%;
+}

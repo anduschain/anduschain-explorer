@@ -1,0 +1,13 @@
+.TransactionsOverview {
+  .transaction_state {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .transaction_arrow {
+    margin: 0 12px;
+    @media (max-width: 1240px) {
+      margin: 0 2px;
+    }
+  }
+}

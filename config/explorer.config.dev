@@ -1,0 +1,14 @@
+{
+  "db_conn_info" : {
+    "protocol" :"mongodb+srv",
+    "user"     : "user",
+    "password" : "pass",
+    "dbname"   : "Anduschain_999",
+    "host" : "mongodburl",
+    "dboption" : "test?ssl=true&retryWrites=true"
+  },
+  "serverport" : "80",
+  "node_wsrpc_endpoint" : "ws://localhost:8549",
+  "jointx_address" : "0x000000000000000000000000000000000000dA07",
+  "cors_allow_origins" : []
+}

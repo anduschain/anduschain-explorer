@@ -1,0 +1,20 @@
+.StateButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  height: 36px;
+  padding: 0 20px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+
+  .thumb {
+    margin-right: 10px;
+  }
+
+  &.success {
+    color: #0492ff;
+    border: 1px solid #0492ff;
+  }
+}

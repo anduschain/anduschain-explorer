@@ -1,0 +1,24 @@
+.NotFound {
+  .NotFound-contents {
+    padding: 60px 0 120px;
+  }
+  .NotFound-heading {
+    font-weight: 500;
+    font-size: 46px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .NotFound-desc {
+    text-align: center;
+    margin: 50px 0 60px;
+    color: #bababa;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .NotFound-button {
+    text-align: center;
+    .NotFound-button-thumb {
+      margin-right: 15px;
+    }
+  }
+}

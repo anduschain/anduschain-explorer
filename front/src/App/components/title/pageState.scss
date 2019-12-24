@@ -1,0 +1,31 @@
+.pageState {
+  margin: 60px 0 0;
+
+  .pageState_name {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .pageState_network {
+    margin-top: 24px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+  }
+  .pageState_block {
+    margin-left: 15px;
+    color: #bababa;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .pageState_hash {
+    margin-top: 20px;
+    text-align: center;
+    color: #bababa;
+    font-size: 14px;
+    .CopyButton {
+      margin-left: 10px;
+    }
+  }
+}

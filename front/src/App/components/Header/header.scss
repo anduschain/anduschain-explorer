@@ -1,0 +1,28 @@
+.Header {
+  color: #ffffff;
+
+  .logo {
+    padding: 45px 100px 0 0;
+    vertical-align: top;
+  }
+
+  nav {
+    display: inline-block;
+    padding-top: 70px;
+  }
+
+  .network {
+    margin-top: 70px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    float: right;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+  .network_selected {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+}

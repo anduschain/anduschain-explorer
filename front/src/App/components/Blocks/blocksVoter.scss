@@ -1,0 +1,14 @@
+.BlocksVoter {
+  position: relative;
+  height: 241px;
+  // border: 1px solid #000;
+}
+.blocksVoter_table.table_type02 {
+  td {
+    padding: 0;
+    text-align: center;
+    &:nth-child(1) {
+      width: 40%;
+    }
+  }
+}

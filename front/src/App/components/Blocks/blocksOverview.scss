@@ -1,0 +1,9 @@
+.BlocksOverview_table {
+  .CopyButton {
+    margin-left: 10px;
+    @media (max-width: 1200px) {
+      margin-top: 3px;
+      margin-left: 0;
+    }
+  }
+}
