@@ -2,8 +2,8 @@ import {bindActionCreators} from "redux";
 import {mainnet, testnet, devnet} from "../modules/appState";
 import {connect} from "react-redux";
 
-const URL = () => `http://localhost/api/anduschain`;
-const WS_URL = () => `ws://localhost/api/ws/anduschain`;
+const URL = () => `/api/anduschain`;
+const WS_URL = () => `ws://${process.env.REACT_APP_WSHOST}/api/ws/anduschain`;
 const IP_ADDR = (ip) => `https://ipapi.co/${ip}/json/`;
 
 //Response

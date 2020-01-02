@@ -2,6 +2,7 @@
   "name": "anduschain-explorer-frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy" : "http://localhost",
   "resolutions": {
   "babel-jest": "24.7.1"
   },
