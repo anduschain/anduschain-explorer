@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/anduschain/anduschain-explorer-backend/db/schema"
+	"github.com/anduschain/anduschain-explorer/db/schema"
 )
 
 type Response struct {
@@ -15,9 +15,9 @@ type Account struct {
 
 type PageNumResp struct {
 	Response
-	PageTotalNum int `json:"pageTotalNum" xml:"pageTotalNum"`
+	PageTotalNum int   `json:"pageTotalNum" xml:"pageTotalNum"`
 	TotalCount   int64 `json:"totalCount" xml:"totalCount"`
-	PageRow      int `json:"pageRow" xml:"pageRow"`
+	PageRow      int   `json:"pageRow" xml:"pageRow"`
 }
 
 type BlocksResp struct {

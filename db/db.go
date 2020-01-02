@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/anduschain/anduschain-explorer-backend/config"
-	"github.com/anduschain/anduschain-explorer-backend/db/schema"
-	"github.com/anduschain/anduschain-explorer-backend/service"
+	"github.com/anduschain/anduschain-explorer/config"
+	"github.com/anduschain/anduschain-explorer/db/schema"
+	"github.com/anduschain/anduschain-explorer/service"
 	"github.com/anduschain/go-anduschain/fairnode/fairdb/fntype"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -308,7 +308,7 @@ func (fnb *FairNodeDB) GetTransactionByType(PageRow, page, blockNum int64, txTyp
 
 	//({"data.type":0, "data.to":{"$not":{"$regex":"contract"}}})
 	if txType == TRANSFER {
-		txCursor, err = fnb.Transactions.Find(fnb.context, bson.M{"blockHash": block.Hash, "data.type": txType, "data.to": bson.M{"$not": bson.M{"$regex":"contract"}}}, findOpts)
+		txCursor, err = fnb.Transactions.Find(fnb.context, bson.M{"blockHash": block.Hash, "data.type": txType, "data.to": bson.M{"$not": bson.M{"$regex": "contract"}}}, findOpts)
 	} else if txType == JOINTX {
 		txCursor, err = fnb.Transactions.Find(fnb.context, bson.M{"blockHash": block.Hash, "data.type": txType}, findOpts)
 	} else if txType == CONTRACT {

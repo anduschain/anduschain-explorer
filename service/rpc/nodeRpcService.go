@@ -2,7 +2,7 @@ package rpc
 
 import (
 	"context"
-	"github.com/anduschain/anduschain-explorer-backend/config"
+	"github.com/anduschain/anduschain-explorer/config"
 	"github.com/anduschain/go-anduschain/common"
 	"github.com/anduschain/go-anduschain/core/types"
 	"github.com/anduschain/go-anduschain/ethclient"

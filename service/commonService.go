@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/anduschain/anduschain-explorer-backend/config"
+	"github.com/anduschain/anduschain-explorer/config"
 	"github.com/labstack/echo"
 	"net/http"
 	"strings"

@@ -2,7 +2,7 @@ package api
 
 import (
 	"errors"
-	"github.com/anduschain/anduschain-explorer-backend/db"
+	"github.com/anduschain/anduschain-explorer/db"
 	"github.com/labstack/echo"
 	"net/http"
 	"strconv"
@@ -127,7 +127,7 @@ func BlockTransaction(fdb *db.FairNodeDB) echo.HandlerFunc {
 			switch t {
 			case "transfer":
 				txType = TRANSFER
-				break;
+				break
 			case "jointx":
 				txType = JOINTX
 				break

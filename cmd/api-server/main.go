@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/anduschain/anduschain-explorer-backend/config"
-	"github.com/anduschain/anduschain-explorer-backend/router"
+	"github.com/anduschain/anduschain-explorer/config"
+	"github.com/anduschain/anduschain-explorer/router"
 	"os"
 	"os/signal"
 	"syscall"

@@ -2,8 +2,8 @@ package api
 
 import (
 	"errors"
-	"github.com/anduschain/anduschain-explorer-backend/db"
-	"github.com/anduschain/anduschain-explorer-backend/service/rpc"
+	"github.com/anduschain/anduschain-explorer/db"
+	"github.com/anduschain/anduschain-explorer/service/rpc"
 	"github.com/anduschain/go-anduschain/common"
 	"github.com/labstack/echo"
 	"net/http"

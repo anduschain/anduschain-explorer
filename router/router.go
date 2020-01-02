@@ -2,12 +2,12 @@ package router
 
 import (
 	"fmt"
-	"github.com/anduschain/anduschain-explorer-backend/config"
-	"github.com/anduschain/anduschain-explorer-backend/db"
-	"github.com/anduschain/anduschain-explorer-backend/router/api"
-	"github.com/anduschain/anduschain-explorer-backend/router/socket"
-	"github.com/anduschain/anduschain-explorer-backend/service"
-	"github.com/anduschain/anduschain-explorer-backend/service/rpc"
+	"github.com/anduschain/anduschain-explorer/config"
+	"github.com/anduschain/anduschain-explorer/db"
+	"github.com/anduschain/anduschain-explorer/router/api"
+	"github.com/anduschain/anduschain-explorer/router/socket"
+	"github.com/anduschain/anduschain-explorer/service"
+	"github.com/anduschain/anduschain-explorer/service/rpc"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	"net/http"

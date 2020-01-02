@@ -1,4 +1,4 @@
-module github.com/anduschain/anduschain-explorer-backend
+module github.com/anduschain/anduschain-explorer
 
 go 1.13
 

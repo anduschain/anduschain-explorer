@@ -2,10 +2,10 @@ package socket
 
 import (
 	"errors"
-	"github.com/anduschain/anduschain-explorer-backend/db"
-	"github.com/anduschain/anduschain-explorer-backend/db/schema"
-	"github.com/anduschain/anduschain-explorer-backend/router/api"
-	"github.com/anduschain/anduschain-explorer-backend/service/rpc"
+	"github.com/anduschain/anduschain-explorer/db"
+	"github.com/anduschain/anduschain-explorer/db/schema"
+	"github.com/anduschain/anduschain-explorer/router/api"
+	"github.com/anduschain/anduschain-explorer/service/rpc"
 	"github.com/anduschain/go-anduschain/core/types"
 	"github.com/gorilla/websocket"
 	"github.com/labstack/echo"
