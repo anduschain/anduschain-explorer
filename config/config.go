@@ -8,14 +8,16 @@ import (
 	"log"
 	"os"
 	"strings"
+	"time"
 )
 
 type Config struct {
-	DbConnInfo          DBConnInfo `json:"db_conn_info"`
-	Port                string     `json:"serverport"`
-	Node_WSRPC_EndPoint string     `json:"node_wsrpc_endpoint"`
-	JoinTxAddress       string     `json:"jointx_address"`
-	CORSAllowOrigins    []string   `json:"cors_allow_origins"`
+	DbConnInfo          DBConnInfo    `json:"db_conn_info"`
+	Port                string        `json:"serverport"`
+	Node_WSRPC_EndPoint string        `json:"node_wsrpc_endpoint"`
+	JoinTxAddress       string        `json:"jointx_address"`
+	CORSAllowOrigins    []string      `json:"cors_allow_origins"`
+	DbTimeOut           time.Duration `json:"db_time_out"`
 }
 
 type DBConnInfo struct {

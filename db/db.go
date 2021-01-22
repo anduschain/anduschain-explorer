@@ -168,7 +168,7 @@ func (fnb *FairNodeDB) GetBlocks(page, PageRow int) []schema.RespBlockPage {
 
 func (fnb *FairNodeDB) getBlockTxCnt(hash string) int {
 	count, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": hash},
-		options.Count().SetMaxTime(1*time.Second))
+		options.Count().SetMaxTime(config.Conf.DbTimeOut*time.Second))
 	if err != nil {
 		return 0
 	}
@@ -184,15 +184,15 @@ func (fnb *FairNodeDB) GetBlockDetail(blockNum int64) (error, *schema.StoredBloc
 		return err, nil
 	}
 
-	transferTxCnt, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": block.Hash, "data.type": 0}, options.Count().SetMaxTime(1*time.Second))
+	transferTxCnt, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": block.Hash, "data.type": 0}, options.Count().SetMaxTime(config.Conf.DbTimeOut*time.Second))
 	if err != nil {
 		return err, nil
 	}
-	contractTxCnt, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": block.Hash, "data.to": "contract"}, options.Count().SetMaxTime(1*time.Second))
+	contractTxCnt, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": block.Hash, "data.to": "contract"}, options.Count().SetMaxTime(config.Conf.DbTimeOut*time.Second))
 	if err != nil {
 		return err, nil
 	}
-	joinTxCnt, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": block.Hash, "data.type": 1}, options.Count().SetMaxTime(1*time.Second))
+	joinTxCnt, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"blockHash": block.Hash, "data.type": 1}, options.Count().SetMaxTime(config.Conf.DbTimeOut*time.Second))
 	if err != nil {
 		return err, nil
 	}
@@ -227,7 +227,7 @@ func (fnb *FairNodeDB) GetMiners() ([]fntype.HeartBeat, error) {
 
 func (fnb *FairNodeDB) GetTxTotalCount() (int64, error) {
 	count, err := fnb.Transactions.EstimatedDocumentCount(fnb.context,
-		options.EstimatedDocumentCount().SetMaxTime(1*time.Second))
+		options.EstimatedDocumentCount().SetMaxTime(config.Conf.DbTimeOut*time.Second))
 	if err != nil {
 		//fmt.Errorf("exceeds time limit, %v", err)
 		return 0, err
@@ -237,7 +237,7 @@ func (fnb *FairNodeDB) GetTxTotalCount() (int64, error) {
 
 func (fnb *FairNodeDB) GetTxCountWithAccount(account string) (int64, error) {
 	count, err := fnb.Transactions.CountDocuments(fnb.context, bson.M{"From": account},
-		options.Count().SetMaxTime(1*time.Second))
+		options.Count().SetMaxTime(config.Conf.DbTimeOut*time.Second))
 	if err != nil {
 		return 0, err
 	}
